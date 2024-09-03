@@ -30,10 +30,10 @@ window.addEventListener( 'load', () => {
 
     document.getElementById("toggle-video").addEventListener("click", function() {
         var videoStatusText = document.getElementsByClassName("status-text")[0];
-        if (videoStatusText.textContent === "隐藏视频") {
+        if (videoStatusText.textContent === "关闭视频") {
             videoStatusText.textContent = "开启视频";
         } else {
-            videoStatusText.textContent = "隐藏视频";
+            videoStatusText.textContent = "关闭视频";
         }
     });
     document.getElementById("toggle-mute").addEventListener("click", function() {
@@ -82,8 +82,7 @@ window.addEventListener( 'load', () => {
             let roomLink = `${ location.origin }?room=${ roomName.trim().replace( ' ', '_' ) }_${ helpers.generateRandomString() }`;
 
             //show message with link to room
-            document.querySelector( '#room-created' ).innerHTML = `房间创建成功. 点击 <a href='${ roomLink }'>这里</a> 进入房间吧！
-            快分享链接邀请同伴进入房间`;
+            document.querySelector('#room-created').innerHTML = `<center>房间创建成功，点击 <a href='${ roomLink }'>这里</a> 进入房间吧！<br>分享链接可邀请同伴进入房间～</center>`;
 
             //empty the values
             document.querySelector( '#room-name' ).value = '';
@@ -91,7 +90,7 @@ window.addEventListener( 'load', () => {
         }
 
         else {
-            document.querySelector('#err-msg').innerText = "所有的空格都要填噢";
+            document.querySelector('#err-msg').innerText = "请填写所有空格";
         }
     } );
 
@@ -114,7 +113,7 @@ window.addEventListener( 'load', () => {
         }
 
         else {
-            document.querySelector('#err-msg-username').innerText = "请输入你的名字噢";
+            document.querySelector('#err-msg-username').innerText = "请输入您的昵称";
         }
     } );
 
