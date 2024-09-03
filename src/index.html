@@ -14,7 +14,8 @@
         <!-- <link rel="stylesheet" href="assets/css/all.css"> -->
         <link rel='stylesheet' href='assets/css/app.css' type="text/css">
 
-    <script src='/socket.io/socket.io.js'></script>
+    <!-- 使用 CDN 加载 Socket.IO 客户端库 -->
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
     <script type="module" src='assets/js/rtc.js'></script>
     <script type="module" src='assets/js/events.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/7.3.0/adapter.min.js"
@@ -105,7 +106,7 @@
             </div>
 
             <div class="col-12 col-md-4 offset-md-4 mb-3">
-                <label for="your-name">你的名字</label>
+                <label for="your-name">用户名</label>
                 <input type="text" id='your-name' class="form-control rounded-0" placeholder="Your Name">
             </div>
 
@@ -119,7 +120,7 @@
 
     <div class="container-fluid" id='username-set' hidden>
         <div class="row">
-            <div class="col-12 h4 mt-5 text-center">你的名字</div>
+            <div class="col-12 h4 mt-5 text-center">用户名</div>
         </div>
 
         <div class="row mt-2">
@@ -128,7 +129,7 @@
             </div>
 
             <div class="col-12 col-md-4 offset-md-4 mb-3">
-                <label for="username">你的名字</label>
+                <label for="username">用户名</label>
                 <input type="text" id='username' class="form-control rounded-0" placeholder="Your Name">
             </div>
 

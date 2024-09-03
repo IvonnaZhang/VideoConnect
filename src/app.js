@@ -1,6 +1,3 @@
-```
-HTTP
-```
 // let express = require('express');
 // let app = express();
 // let server = require('http').Server(app);
@@ -22,9 +19,6 @@ HTTP
 // server.listen(8090);
 
 
-```
-HTTPS
-```
 // 将服务器绑定到局域网 IP 地址
 let express = require('express');
 let https = require('https');
