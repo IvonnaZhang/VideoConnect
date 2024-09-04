@@ -94,5 +94,3 @@
     # 生成自签名证书
     openssl x509 -req -days 365 -in /etc/ssl/test.csr -signkey /etc/ssl/test.key -out /etc/ssl/test.crt
     ````
-
-### 
