@@ -20,8 +20,8 @@
 - 在服务器上安装Node.js和npm：
 
   ```
-  sudo apt update
-  sudo apt install nodejs npm
+  sudo yum update
+  sudo yum install nodejs npm
   ```
 
 ### Step4 获取项目代码
